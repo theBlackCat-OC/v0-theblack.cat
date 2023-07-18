@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="resources/favicon.png">
+  <link rel="stylesheet" type="text/css" href="resources/styles/root.css">
+  <link rel="stylesheet" type="text/css" href="resources/styles/gallery.css">
+  <link rel="stylesheet" type="text/css" href="resources/styles/topbar.css">
+  <link rel="stylesheet" type="text/css" href="resources/styles/bottombar.css">
+  <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
+  <link rel="stylesheet" type="text/css" href="resources/styles/textboxes.css">
+  <link rel="stylesheet" type="text/css" href="resources/styles/contact.css">
+  <title>Contact - the Black Cat</title>
+<body>
+  <a href="https://theblack.cat"><div class="topbar" style="cursor: pointer;">&nbsp;the Black Cat</div></a><br><br><br><br>
+  <div id="gallery-description"><img src="resources/thank-you-flaticons/mail.png" width="30" height="30" class="inline-icon">&nbsp;Contact Options</div><br><br>
+
+  <div class="button-outer-box-contact">
+      You can reach to me via email at:<br>
+
+      <a id="email-content" href='mailto:contact@theblack.cat'><b>contact@theblack.cat</b></a>&nbsp;<img id="myImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
+      
+      <br>
+      Or send me a DM on Twitter:<br>
+      <a class="twitter-timeline" data-width="1200" data-height="600" data-theme="dark" href="https://twitter.com/theBlackCat_OC?ref_src=twsrc%5Etfw">Loading Twitter timeline, please hold...</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+    <span>Stupid tech pissbro broke the embed tweets SMH no more hornyposting</span>
+    </div>
+  <script>
+window.addEventListener('DOMContentLoaded', () => {
+    var image = document.getElementById('myImage');
+    var emailContent = document.getElementById('email-content');
+
+    var isImage1 = true;
+
+    image.addEventListener('click', function() {
+        if (isImage1) {
+            var email = emailContent.getAttribute('href').replace('mailto:', '');
+            navigator.clipboard.writeText(email)
+                .then(function() {
+                    console.log('Email copied to clipboard');
+                })
+                .catch(function(err) {
+                    console.error('Failed to copy email: ', err);
+                });
+
+            image.src = "resources/thank-you-flaticons/check.png";
+            isImage1 = false;
+        }
+    });
+});
+</script>
+  <br><br>
+  <div class="bottombar">
+    <span style="cursor: default;">&copy;&nbsp;the Black Cat, 2023</span>&nbsp;&nbsp;&nbsp;
+    <a href="site-map"><span class="bottombar-button"><img src="resources/thank-you-flaticons/site-map.png" width="28" height="28" class="inline-icon">&nbsp;Site Map</span></a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="terms-of-use"><span class="bottombar-button"><img src="resources/thank-you-flaticons/woman.png" width="28" height="28" class="inline-icon">&nbsp;OC Terms of Use</span></a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/theBlackCat-OC/theblack.cat" target="_blank"><span class="bottombar-button"><img src="resources/thank-you-flaticons/git.png" width="28" height="28" class="inline-icon">&nbsp;Website Repository</span></a>
+    &nbsp;&nbsp;&nbsp;
+    <span class="bottombar-button" onclick="goToTop()" id="goTopBtn"><img src="resources/thank-you-flaticons/go-up.png" width="28" height="28" class="inline-icon">&nbsp;Go to Top</span>
+  </div> 
+  <div class="button-container">
+    <div class="butwhy-button" onclick="window.location.href = '#butwhy';">?</div>
+  </div>  
+  <script src="resources/scripts/slides.js"></script>
+  <script src="resources/scripts/polkadot.js"></script>
+  <script src="resources/scripts/totop.js"></script>
+</body>
+</html>
