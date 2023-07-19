@@ -1,5 +1,5 @@
 #gallery-description{
-    width: 75vw;
+    width: 43vw;
     text-align: center;
     margin: auto;
     font-family: 'sanfrancisco', sans-serif;
@@ -17,7 +17,7 @@
   }
   
   .gallery-navigation{
-    width: 75vw;
+    width: 43vw;
     font-family: 'sanfrancisco', sans-serif;
     font-size: 1.6em;
     margin: auto;
