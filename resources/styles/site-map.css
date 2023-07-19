@@ -28,6 +28,8 @@
     font-size: 1.6em;
     padding-left: 2.5vh;
     cursor: default;
+    border-bottom: 1px solid black;
+    width: 100vw;
   }
   
   .smol {
@@ -42,3 +44,9 @@
     vertical-align: -4px;
   }
   
+  .inline-icon-draiv {
+    position: relative;
+    vertical-align: -6px;
+    left: -2px;
+    transform: scale(1.6);
+  }
