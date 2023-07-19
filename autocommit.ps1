@@ -1,5 +1,5 @@
 $date = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
-$message = "Commit made on $date with 💖"
+$message = "Commit made on $date with Love"
 
 git add .
 git commit -m $message
