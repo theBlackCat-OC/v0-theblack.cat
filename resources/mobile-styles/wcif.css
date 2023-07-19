@@ -1,70 +1,59 @@
-.button-outer-box-contact {
-    width: 75vw;
-    margin: auto;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
-    border: 1px solid black;
-    padding: 15px;
-    box-sizing: border-box;
-    text-align: left;
-    line-height: 1.6;
-}
-.spantitle{
+  .spantitle {
     font-family: 'latex-italic-bold', serif;
-    font-size:1.6em;
-}
-.spandefinition{
-    font-family: 'latex-regular', serif;
     font-size: 1.3em;
-}
-.spandefinitiontwo{
+  }
+  
+  .spandefinition {
     font-family: 'latex-regular', serif;
-    font-size: 1.2em;
-}
-.spanexample{
+    font-size: 1em;
+  }
+  
+  .spandefinitiontwo {
+    font-family: 'latex-regular', serif;
+    font-size: 0.9em;
+  }
+  
+  .spanexample {
     font-family: 'latex-italic-slim', serif;
-    font-size: 1.2em;
-}
-
-.spanfootnote{
+    font-size: 0.9em;
+  }
+  
+  .spanfootnote {
     font-family: 'sanfrancisco', sans-serif;
     font-size: 0.6em;
-}
-
-.big, .medium, .smol, .smollist {
+  }
+  
+  .big, .medium, .smol, .smollist {
     font-family: 'sanfrancisco', sans-serif;
-}
-
-.big{
-    font-size: 2.6em;
+  }
+  
+  .big {
+    font-size: 2.3em;
     cursor: default;
-}
-
-.medium{
-    font-size: 1.6em;
-    padding-left: 2.5vh;
-    cursor: default;
-}
-
-.smol{
-    font-size: 1em;
-}
-
-.smollist{
-    font-size: 1em;
-    padding-left: 5vh;
-}
-
-.smollisttwo{
-    font-family: 'sanfrancisco', sans-serif;
+  }
+  
+  .medium {
     font-size: 1.3em;
-    padding-left: 5vh;
-}
-
-.code-container {
+    padding-left: 2.5vw;
+    cursor: default;
+  }
+  
+  .smol {
+    font-size: 0.9em;
+  }
+  
+  .smollist {
+    font-size: 0.9em;
+    padding-left: 5vw;
+  }
+  
+  .smollisttwo {
+    font-family: 'sanfrancisco', sans-serif;
+    font-size: 1em;
+    padding-left: 5vw;
+  }
+  
+  .code-container {
     position: relative;
   }
   
@@ -74,8 +63,8 @@
     right: 5px;
   }
   
-  .code-container{
-    width: 45vh;
+  .code-container {
+    width: 45vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -88,8 +77,9 @@
     text-align: left;
     line-height: 1.6;
   }
-  .code-container-big{
-    width: 68vh;
+  
+  .code-container-big {
+    width: 68vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -102,3 +92,4 @@
     text-align: left;
     line-height: 1.6;
   }
+  

@@ -2,34 +2,35 @@
     width: 75vw;
     margin: auto;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
     border: 1px solid black;
     padding: 15px;
     box-sizing: border-box;
-    text-align: center;
-    font-size: 1.2em;
+    text-align: left;
     line-height: 1.6;
     font-family: 'sanfrancisco', sans-serif;
   }
-
-  .button-outer-box-contact span{
+  
+  .big, .medium, .smol {
+    font-family: 'sanfrancisco', sans-serif;
+  }
+  
+  .big {
+    font-size: 2.3em;
+    cursor: default;
+  }
+  
+  .medium {
+    font-size: 1.3em;
+    padding-left: 2.5vw;
+    cursor: default;
+  }
+  
+  p {
     font-size: 0.9em;
+    padding-left: 5vw;
   }
-
-  .twitter-timeline{
-    text-align: center;
-    width: 75vh;
-    margin: auto;
-  }
-
-  #myImage{
-    vertical-align: -2px;
-  }
-
-  #myImage:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
+  

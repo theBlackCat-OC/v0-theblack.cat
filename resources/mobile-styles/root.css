@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'sanfrancisco';
+  src: url('../fonts/sanfrancisco.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'productsanslight';
+  src: url('../fonts/productsanslight.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'chirp';
+  src: url('../fonts/chirp.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'latex-italic-bold';
+  src: url('../fonts/latex-italic-bold.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'latex-italic-slim';
+  src: url('../fonts/latex-italic-slim.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'latex-italic';
+  src: url('../fonts/latex-italic.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'latex-regular';
+  src: url('../fonts/latex-regular.ttf') format('opentype');
+}
+
+body {
+  background-image: radial-gradient(white 6%, transparent 10%), radial-gradient(white 6%, transparent 10%);
+  background-size: 40px 40px;
+  background-position: 0 0, 60px 60px;
+  animation-name: backgroundmovement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(24, 124, 255);
+}
+
+@keyframes backgroundmovement {
+  0% {
+    background-position: 0px 0px, 60px 60px;
+  }
+  100% {
+    background-position: 60px 60px, 120px 120px;
+  }
+}
+
+.footnote {
+  font-size: 0.5em;
+}
+
+.button-container {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  transform: translateY(-60%);
+  z-index: 99999999;
+}
+
+.butwhy-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-family: 'sanfrancisco', serif;
+}
+
+.inline-icon {
+  vertical-align: -1px;
+}

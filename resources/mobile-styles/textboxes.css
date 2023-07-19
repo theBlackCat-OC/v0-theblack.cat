@@ -3,12 +3,14 @@
     text-align: center;
     margin: auto;
     font-family: 'sanfrancisco', sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
     color: black;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     border: 1px solid black;
   }
 
@@ -19,7 +21,7 @@
   .gallery-navigation{
     width: 75vw;
     font-family: 'sanfrancisco', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin: auto;
     text-align: center;
     color: black;
@@ -29,8 +31,8 @@
     -webkit-backdrop-filter: blur(3.1px);
     border: 1px solid black;
     cursor: pointer;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
   }
   .gallery-navigation:hover{
     background-color: rgba(255, 255, 255, 0.9);

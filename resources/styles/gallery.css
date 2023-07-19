@@ -1,6 +1,6 @@
 #outer-box {
-    width: 75vh;
-    height: 80vh;
+    width: 75vw;
+    height: 80vw;
     margin: auto;
     overflow: hidden;
     /* From https://css.glass */

@@ -1,5 +1,5 @@
 .button-outer-box-contact {
-    width: 75vh;
+    width: 75vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -14,29 +14,31 @@
     font-family: 'sanfrancisco', sans-serif;
 }
 
-.big, .medium, .smol {
+
+  .big, .medium, .smol {
     font-family: 'sanfrancisco', sans-serif;
+  }
 
-}
-
-.big{
+  .big {
     font-size: 2.6em;
     cursor: default;
-}
-
-.medium{
+  }
+  
+  .medium {
     font-size: 1.6em;
     padding-left: 2.5vh;
     cursor: default;
-}
-
-.smol{
-    font-size: 1em;
+  }
+  
+  .smol {
+    font-size: 1.5em;
     padding-left: 5vh;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.inline-icon-index{
+    display: inline-block;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  
+  .inline-icon-index {
     vertical-align: -4px;
   }
+  
