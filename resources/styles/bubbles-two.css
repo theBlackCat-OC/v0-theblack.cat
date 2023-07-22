@@ -10,6 +10,7 @@
   z-index: 3;
   border: 1px solid black;
   font-size: 1em;
+    cursor: pointer;
 }
 
 .bubble-bug {
