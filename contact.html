@@ -9,25 +9,18 @@
   <link rel="stylesheet" type="text/css" href="resources/styles/bottombar.css">
   <link rel="stylesheet" type="text/css" href="resources/styles/linktree.css">
   <link rel="stylesheet" type="text/css" href="resources/styles/textboxes.css">
-  <link rel="stylesheet" type="text/css" href="resources/styles/contact.css">
-  <!-- ~~~~ -->
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/root.css">
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/gallery.css">
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/topbar.css">
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/bottombar.css">
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/linktree.css">
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/textboxes.css">
-  <!-- ~~~~ -->
-  <link rel="stylesheet" media="(max-width: 1244px)" href="resources/mobile-styles/contact.css">
-  <!-- ~~~~ -->
+    <!-- ~~~~ -->
+    <link rel="stylesheet" type="text/css" href="resources/styles/bubbles-two.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/contact.css">
+    <!-- ~~~~ -->
   <title>Contact - the Black Cat</title>
-<body>
+<body class="loading-animation">
   <a href="https://theblack.cat"><div class="topbar" style="cursor: pointer;">&nbsp;the Black Cat</div></a><br><br><br><br>
   <div id="gallery-description"><img src="resources/thank-you-flaticons/mail.png" width="30" height="30" class="inline-icon">&nbsp;Contact Options</div><br><br>
 
   <div class="button-outer-box-contact">
       <span>You can reach to me via email at:</span><br>
-      <a id="email-content" href='mailto:contact@theblack.cat'><b>contact@theblack.cat</b></a>&nbsp;<img id="myImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20"><br>
+      <a id="email-content" href='mailto:contact@theblack.cat' style="font-family: 'latex-regular';">contact@theblack.cat</a>&nbsp;<img id="myImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20"><br>
       <span>(Please, include in any email sent an alternative way of contact, as the inbox <b>can't</b> send emails)</span><br>
       <span>Or send me a DM on Twitter:</span><br>
       <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/theBlackCat_OC?ref_src=twsrc%5Etfw">Loading Twitter timeline, please hold... If this doesn't work, click here.</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
@@ -63,18 +56,22 @@
     });
   </script>
   <br><br>
+  <!-- ~~~~ -->
+  <div class="bubble-trigger-bug">
+    <img src="resources/thank-you-flaticons/bug.png" width="28" height="28">
+  </div>
+  <div class="bubble-bug">
+    <span>Found any bugs? Have any feedback?<br>Report them in the GitHub Repository Page by <a href="https://github.com/theBlackCat-OC/theblack.cat/issues" target="_blank">Opening an issue</a> and by using an appropiate label.</span>
+  </div>
+<!-- ~~~~ -->
   <div class="bottombar">
-    <a href="https://theblack.cat"><span>&copy;&nbsp;the Black Cat, 2023</span></a>&nbsp;&nbsp;&nbsp;
-    <a href="site-map"><span class="bottombar-button"><img src="resources/thank-you-flaticons/site-map.png" width="28" height="28" class="inline-icon">&nbsp;Site Map</span></a>
+    <a href="https://theblack.cat"><span>&copy;&nbsp;黒猫 | the Black Cat, 2023</span></a>
     &nbsp;&nbsp;&nbsp;
-    <a href="terms-of-use"><span class="bottombar-button"><img src="resources/thank-you-flaticons/woman.png" width="28" height="28" class="inline-icon">&nbsp;OC Terms of Use</span></a>
+    <a href="site-map"><span class="bottombar-button"><img src="resources/thank-you-flaticons/site-map.png" width="28" height="28" class="inline-icon">&nbsp;Site Map</span></a>
     &nbsp;&nbsp;&nbsp;
     <a href="https://github.com/theBlackCat-OC/theblack.cat" target="_blank"><span class="bottombar-button"><img src="resources/thank-you-flaticons/git.png" width="28" height="28" class="inline-icon">&nbsp;Website Repository</span></a>
     &nbsp;&nbsp;&nbsp;
     <span class="bottombar-button" onclick="goToTop()" id="goTopBtn"><img src="resources/thank-you-flaticons/go-up.png" width="28" height="28" class="inline-icon">&nbsp;Go to Top</span>
-  </div> 
-  <div class="button-container">
-    <div class="butwhy-button" onclick="window.location.href = '#butwhy';">?</div>
   </div>  
   <script src="resources/scripts/slides.js"></script>
   <script src="resources/scripts/polkadot.js"></script>

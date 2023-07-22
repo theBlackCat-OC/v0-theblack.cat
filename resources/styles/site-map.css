@@ -1,5 +1,5 @@
 .button-outer-box-contact {
-    width: 75vw;
+  width: 62vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -12,6 +12,7 @@
     text-align: left;
     line-height: 1.6;
     font-family: 'sanfrancisco', sans-serif;
+    border-radius: 13px;
 }
 
 
@@ -49,4 +50,65 @@
     vertical-align: -6px;
     left: -2px;
     transform: scale(1.6);
+  }
+
+  .button-outer-box-contact a {
+    color: rgb(24, 124, 255);
+  }
+  
+  .button-outer-box-contact a:hover, .a:active {
+    color: rgb(0, 61, 141);
+  }
+  
+
+  @media (max-width: 1244px) {
+    .button-outer-box-contact {
+      width: 71vw;
+      margin: auto;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+      border: 1px solid black;
+      padding: 15px;
+      box-sizing: border-box;
+      text-align: left;
+      line-height: 1.6;
+      font-family: 'sanfrancisco', sans-serif;
+      border-radius: 13px;
+    }
+    
+    .spanbackground {
+      display: inline-block;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+    }
+    
+    .big, .medium, .smol {
+      font-family: 'sanfrancisco', sans-serif;
+    }
+    
+    .big {
+      font-size: 2.6em;
+      cursor: default;
+    }
+    
+    .medium {
+      font-size: 1.6em;
+      padding-left: 2.5vh;
+      cursor: default;
+    }
+    
+    .smol {
+      font-size: 1.5em;
+      padding-left: 5vh;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .inline-icon-index {
+      vertical-align: -4px;
+    }
+    
   }

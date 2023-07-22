@@ -1,8 +1,8 @@
 #gallery-description{
-    width: 43vw;
+    width: 47vw;
     text-align: center;
     margin: auto;
-    font-family: 'sanfrancisco', sans-serif;
+    font-family: 'productsanslight', sans-serif;
     font-size: 2em;
     color: black;
     background: rgba(255, 255, 255, 0.6);
@@ -10,6 +10,7 @@
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
     border: 1px solid black;
+    padding: 10px;
   }
 
   #gallery-description:hover{
@@ -17,6 +18,7 @@
   }
   
   .gallery-navigation{
+    border-radius: 13px;
     width: 43vw;
     font-family: 'sanfrancisco', sans-serif;
     font-size: 1.6em;
@@ -29,8 +31,7 @@
     -webkit-backdrop-filter: blur(3.1px);
     border: 1px solid black;
     cursor: pointer;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    padding: 10px;
   }
   .gallery-navigation:hover{
     background-color: rgba(255, 255, 255, 0.9);
@@ -47,4 +48,59 @@
 
   .inline-icon-index{
     vertical-align: -3px;
+  }
+
+  @media (max-width: 1244px) {
+    #gallery-description{
+      width: 75vw;
+      text-align: center;
+      margin: auto;
+      font-family: 'productsanslight', sans-serif;
+      font-size: 1.7em;
+      color: black;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+      border: 1px solid black;
+    }
+  
+    #gallery-description:hover{
+      cursor: default;
+    }
+    
+    .gallery-navigation{
+      width: 73vw;
+      font-family: 'sanfrancisco', sans-serif;
+      font-size: 1.3em;
+      margin: auto;
+      text-align: center;
+      color: black;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+      border: 1px solid black;
+      cursor: pointer;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+    }
+    .gallery-navigation:hover{
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: 0.5s;
+    }
+    
+      .inline-icon{
+      vertical-align: -5px;
+    }
+    
+    .inline-icon-drive{
+      vertical-align: -8px;
+    }
+  
+    .inline-icon-index{
+      vertical-align: -3px;
+    }
   }

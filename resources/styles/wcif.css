@@ -1,5 +1,5 @@
 .button-outer-box-contact {
-    width: 43vw;
+  width: 62vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -11,7 +11,18 @@
     box-sizing: border-box;
     text-align: left;
     line-height: 1.6;
+    border-radius: 13px;
 }
+
+.button-outer-box-contact a {
+  color: rgb(24, 124, 255);
+}
+
+.button-outer-box-contact a:hover, .a:active {
+  color: rgb(0, 61, 141);
+}
+
+
 .spantitle{
     font-family: 'latex-italic-bold', serif;
     font-size:1.6em;
@@ -78,7 +89,7 @@
   }
   
   .code-container{
-    width: 45vh;
+    width: 60vh;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -90,9 +101,10 @@
     box-sizing: border-box;
     text-align: left;
     line-height: 1.6;
+    border-radius: 16px;
   }
   .code-container-big{
-    width: 68vh;
+    width: 70vh;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -104,4 +116,107 @@
     box-sizing: border-box;
     text-align: left;
     line-height: 1.6;
+    border-radius: 16px;
+  }
+
+  
+  @media (max-width: 1400px) {
+    .button-outer-box-contact {
+        width: 75vw;
+      }
+        .spantitle {
+          font-family: 'latex-italic-bold', serif;
+          font-size: 1.3em;
+        }
+        
+        .spandefinition {
+          font-family: 'latex-regular', serif;
+          font-size: 1em;
+        }
+        
+        .spandefinitiontwo {
+          font-family: 'latex-regular', serif;
+          font-size: 0.9em;
+        }
+        
+        .spanexample {
+          font-family: 'latex-italic-slim', serif;
+          font-size: 0.9em;
+        }
+        
+        .spanfootnote {
+          font-family: 'sanfrancisco', sans-serif;
+          font-size: 0.6em;
+        }
+        
+        .big, .medium, .smol, .smollist {
+          font-family: 'sanfrancisco', sans-serif;
+        }
+        
+        .big {
+          font-size: 2.3em;
+          cursor: default;
+        }
+        
+        .medium {
+          font-size: 1.3em;
+          padding-left: 2.5vw;
+          cursor: default;
+        }
+        
+        .smol {
+          font-size: 0.9em;
+        }
+        
+        .smollist {
+          font-size: 0.9em;
+          padding-left: 5vw;
+        }
+        
+        .smollisttwo {
+          font-family: 'sanfrancisco', sans-serif;
+          font-size: 1em;
+          padding-left: 5vw;
+        }
+        
+        .code-container {
+          position: relative;
+        }
+        
+        .copy-button {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+        
+        .code-container {
+          width: 45vw;
+          margin: auto;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.25);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.1px);
+          -webkit-backdrop-filter: blur(3.1px);
+          border: 1px solid black;
+          padding: 15px;
+          box-sizing: border-box;
+          text-align: left;
+          line-height: 1.6;
+        }
+        
+        .code-container-big {
+          width: 68vw;
+          margin: auto;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 0.25);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(3.1px);
+          -webkit-backdrop-filter: blur(3.1px);
+          border: 1px solid black;
+          padding: 15px;
+          box-sizing: border-box;
+          text-align: left;
+          line-height: 1.6;
+        }
+        
   }
