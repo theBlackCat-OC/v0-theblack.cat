@@ -16,9 +16,6 @@
     margin-right: auto;
     z-index: 2;
   }
-  .topbar:hover{
-  cursor: default;
-  }
 
   @media (max-width: 1920px) {
     .topbar{
