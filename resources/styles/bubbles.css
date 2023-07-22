@@ -1,7 +1,7 @@
 .bubble-trigger-bug {
   position: absolute;
-  top: 20vh;
-  right: 10vw;
+  top: 10px;
+  right: 10px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -13,8 +13,8 @@
 
 .bubble-bug {
   position: absolute;
-  top: 22vh;
-  right: 10.5vw;
+  top: 20px;
+  right: 10px;
   display: none;
   padding: 10px;
   background: rgba(255, 255, 255, 0.6);
@@ -58,8 +58,8 @@
   
   .bubble-bug {
     position: absolute;
-    top: 83vh;
-    right: 2.5vw;
+    top: 80.5vh;
+    right: 2.1vw;
     display: none;
     padding: 10px;
     background: rgba(255, 255, 255, 0.6);

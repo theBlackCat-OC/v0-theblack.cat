@@ -1,5 +1,5 @@
-const bubbleTrigger = document.querySelector('.bubble-trigger');
-const bubble = document.querySelector('.bubble');
+const bubbleTrigger = document.querySelector('.bubble-trigger-bug');
+const bubble = document.querySelector('.bubble-bug');
 
 bubbleTrigger.addEventListener('mouseenter', () => {
   bubble.style.display = 'block';
