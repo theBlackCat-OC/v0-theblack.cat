@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/bubbles-two.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/contact.css">
     <!-- ~~~~ -->
+    <style>.captcha-box { display: none;  }</style>
+    <!-- ~~~~ -->
   <title>Contact - the Black Cat</title>
     <!-- ~~~~ -->
 <body class="loading-animation">
@@ -25,31 +27,47 @@
       <div id="gallery-description"><img src="resources/thank-you-flaticons/mail.png" width="30" height="30" class="inline-icon">&nbsp;Contact Options</div>
       <br><br>
     <!-- ~~~~ -->
-      <div class="cf-turnstile turnstile-contact-content" data-sitekey="0x4AAAAAAAHvIx2O_lyI4AvC" data-callback="javascriptCallback">
-        <div class="button-outer-box-contact turnstile-contact-content">
-          <span>Feel free to contact me via:</span><br>
-            <span>● Email at:</span><br>
+    <div class="button-outer-box-contact">
+      <span>Verifying your browser, please hold...</span>
+      <br><br>
+      <div id="turnstile-widget" class="turnstile-widget"></div>
+      <br>
+    </div>
+    <div class="captcha-box">
+      <div class="button-outer-box-contact">
+        <span>Feel free to contact me via:</span><br>
+          <span>● Email at:</span><br>
 
-            <a id="email-content" href="mailto:contact@theblack.cat" style="font-family: 'latex-regular';" class="spancenter">contact@theblack.cat</a>&nbsp;
-            <img id="emailImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
-            <br><br>
-            <span>● A DM via Discord at:</span><br>        
-            <!-- Second link with the new JavaScript code -->
-            <a id="discord-content" href="#" style="font-family: 'latex-regular';" class="spancenter">theblackcat#5906</a>&nbsp;
-            <img id="discordImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
-            <br><br>
+          <a id="email-content" href="mailto:contact@theblack.cat" style="font-family: 'latex-regular';" class="spancenter">contact@theblack.cat</a>&nbsp;
+          <img id="emailImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
+          <br><br>
+          <span>● A DM via Discord at:</span><br>
+          <a id="discord-content" href="#" style="font-family: 'latex-regular';" class="spancenter">theblackcat#5906</a>&nbsp;
+          <img id="discordImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
+          <br><br>
 
-            <span>● DM on Twitter:</span><br>
-            <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/theBlackCat_OC?ref_src=twsrc%5Etfw">Loading Twitter timeline, please hold... If this doesn't work, click here.</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
-          <br><span>Stupid tech pissbro broke the embed tweets SMH no more hornyposting</span>
-        </div>
-    <!-- ~~~~ -->
-        <script>
-        function captchaSolved() {
-          document.querySelector('.turnstile-contact-content').style.display = 'block';
-        }
-        </script>
+          <span>● DM on Twitter:</span><br>
+          <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/theBlackCat_OC?ref_src=twsrc%5Etfw">Loading Twitter timeline, please hold... If this doesn't work, click here.</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+        <br><span>Stupid tech pissbro broke the embed tweets SMH no more hornyposting</span>
       </div>
+    </div>
+      <script>
+      function showDiv() {
+        document.querySelector(".captcha-box").style.display = "block";
+        document.querySelector("#turnstile-widget").style.display = "none";
+      }
+  
+      window.onloadTurnstileCallback = function() {
+        turnstile.render('#turnstile-widget', {
+          sitekey: '0x4AAAAAAAHvIx2O_lyI4AvC',
+          theme: 'dark',
+          callback: function(token) {
+            console.log(`Challenge Success ${token}`);
+            showDiv();
+          },
+        });
+      };
+      </script>
       <br><br>
     <!-- ~~~~ -->
       <div class="bubble-trigger-bug">
@@ -76,6 +94,7 @@
       <script src="resources/scripts/copy-email.js"></script>
       <script src="resources/scripts/copy-string.js"></script>
       <script src="resources/scripts/bubble-begone.js"></script>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
     <!-- ~~~~ -->
 </body>
 </html>
