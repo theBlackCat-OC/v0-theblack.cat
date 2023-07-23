@@ -27,7 +27,7 @@
       <div id="gallery-description"><img src="resources/thank-you-flaticons/mail.png" width="30" height="30" class="inline-icon">&nbsp;Contact Options</div>
       <br><br>
     <!-- ~~~~ -->
-    <div class="button-outer-box-contact">
+    <div class="button-outer-box-contact captcha-widget">
       <span>Verifying your browser, please hold...</span>
       <br><br>
       <div id="turnstile-widget" class="turnstile-widget"></div>
@@ -52,21 +52,19 @@
       </div>
     </div>
       <script>
-      function showDiv() {
-        document.querySelector(".captcha-box").style.display = "block";
-        document.querySelector("#turnstile-widget").style.display = "none";
-      }
-  
-      window.onloadTurnstileCallback = function() {
-        turnstile.render('#turnstile-widget', {
-          sitekey: '0x4AAAAAAAHvIx2O_lyI4AvC',
-          theme: 'dark',
-          callback: function(token) {
-            console.log(`Challenge Success ${token}`);
-            showDiv();
-          },
-        });
-      };
+        window.onloadTurnstileCallback = function() {
+          turnstile.render('#turnstile-widget', {
+            sitekey: '0x4AAAAAAAHvIx2O_lyI4AvC',
+            theme: 'dark',
+            callback: function(token) {
+              console.log(`Challenge Success ${token}`);
+              hideDiv();
+            },
+          });
+        };
+        function hideDiv() {
+          document.querySelector(".captcha-widget").style.display = "none";
+        }
       </script>
       <br><br>
     <!-- ~~~~ -->
