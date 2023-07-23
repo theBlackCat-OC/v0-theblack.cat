@@ -135,14 +135,6 @@ body{
     }
   }
 
-  .turnstile-contact-content {
-    display: none;
-  }
-
   #turnstile-widget{
     text-align: center;
-  }
-
-  .verifying{
-    font-family: 'perfectsanslight';
   }

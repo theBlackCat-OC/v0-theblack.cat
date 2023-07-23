@@ -58,11 +58,12 @@
             theme: 'dark',
             callback: function(token) {
               console.log(`Challenge Success ${token}`);
-              hideDiv();
+              hideCaptchaAndShowContent();
             },
           });
         };
-        function hideDiv() {
+        function hideCaptchaAndShowContent() {
+          document.querySelector(".captcha-box").style.display = "visible";
           document.querySelector(".captcha-widget").style.display = "none";
         }
       </script>
