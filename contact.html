@@ -22,44 +22,34 @@
     <!-- ~~~~ -->  
   <br><br><br><br>
     <!-- ~~~~ -->
-      <div id="gallery-description"><img src="resources/thank-you-flaticons/mail.png" width="30" height="30" class="inline-icon">&nbsp;Contact Options</div><br><br>
-      <div class="button-outer-box-contact">
-          <span>You can reach to me via email at:</span><br>
-          <a id="email-content" href='mailto:contact@theblack.cat' style="font-family: 'latex-regular';">contact@theblack.cat</a>&nbsp;<img id="myImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20"><br>
-          <span>(Please, include in any email sent an alternative way of contact, as the inbox <b>can't</b> send emails)</span><br>
-          <span>Or send me a DM on Twitter:</span><br>
-          <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/theBlackCat_OC?ref_src=twsrc%5Etfw">Loading Twitter timeline, please hold... If this doesn't work, click here.</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
-        <br><span>Stupid tech pissbro broke the embed tweets SMH no more hornyposting</span>
+      <div id="gallery-description"><img src="resources/thank-you-flaticons/mail.png" width="30" height="30" class="inline-icon">&nbsp;Contact Options</div>
+      <br><br>
+    <!-- ~~~~ -->
+      <div class="cf-turnstile turnstile-contact-content" data-sitekey="0x4AAAAAAAHvIx2O_lyI4AvC" data-callback="javascriptCallback">
+        <div class="button-outer-box-contact turnstile-contact-content">
+          <span>Feel free to contact me via:</span><br>
+            <span>● Email at:</span><br>
+
+            <a id="email-content" href="mailto:contact@theblack.cat" style="font-family: 'latex-regular';" class="spancenter">contact@theblack.cat</a>&nbsp;
+            <img id="emailImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
+            <br><br>
+            <span>● A DM via Discord at:</span><br>        
+            <!-- Second link with the new JavaScript code -->
+            <a id="discord-content" href="#" style="font-family: 'latex-regular';" class="spancenter">theblackcat#5906</a>&nbsp;
+            <img id="discordImage" src="resources/thank-you-flaticons/copy.png" width="20" height="20">
+            <br><br>
+
+            <span>● DM on Twitter:</span><br>
+            <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/theBlackCat_OC?ref_src=twsrc%5Etfw">Loading Twitter timeline, please hold... If this doesn't work, click here.</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+          <br><span>Stupid tech pissbro broke the embed tweets SMH no more hornyposting</span>
         </div>
-      <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            var image = document.getElementById('myImage');
-            var emailContent = document.getElementById('email-content');
-
-            var isImage1 = true;
-
-            image.addEventListener('click', function() {
-                if (isImage1) {
-                    var email = emailContent.getAttribute('href').replace('mailto:', '');
-                    navigator.clipboard.writeText(email)
-                        .then(function() {
-                            console.log('Email copied to clipboard');
-                        })
-                        .catch(function(err) {
-                            console.error('Failed to copy email: ', err);
-                        });
-
-                    image.src = "resources/thank-you-flaticons/check.png";
-                    isImage1 = false;
-
-                    setTimeout(function() {
-                        image.src = "resources/thank-you-flaticons/copy.png";
-                        isImage1 = true;
-                    }, 2500);
-                }
-            });
-        });
-      </script>
+    <!-- ~~~~ -->
+        <script>
+        function captchaSolved() {
+          document.querySelector('.turnstile-contact-content').style.display = 'block';
+        }
+        </script>
+      </div>
       <br><br>
     <!-- ~~~~ -->
       <div class="bubble-trigger-bug">
@@ -80,9 +70,12 @@
         <span class="bottombar-button" onclick="goToTop()" id="goTopBtn"><img src="resources/thank-you-flaticons/go-up.png" width="28" height="28" class="inline-icon">&nbsp;Go to Top</span>
       </div>
     <!-- ~~~~ -->
-<script src="resources/scripts/slides.js"></script>
-<script src="resources/scripts/polkadot.js"></script>
-<script src="resources/scripts/totop.js"></script>
-<script src="resources/scripts/bubble-begone.js"></script>
+      <script src="resources/scripts/slides.js"></script>
+      <script src="resources/scripts/polkadot.js"></script>
+      <script src="resources/scripts/totop.js"></script>
+      <script src="resources/scripts/copy-email.js"></script>
+      <script src="resources/scripts/copy-string.js"></script>
+      <script src="resources/scripts/bubble-begone.js"></script>
+    <!-- ~~~~ -->
 </body>
 </html>

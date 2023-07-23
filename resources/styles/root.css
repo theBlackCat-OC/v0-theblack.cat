@@ -134,3 +134,7 @@ body{
       vertical-align: -1px;
     }
   }
+
+  .turnstile-contact-content {
+    display: none;
+  }
