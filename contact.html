@@ -13,8 +13,6 @@
     <link rel="stylesheet" type="text/css" href="resources/styles/bubbles-two.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/contact.css">
     <!-- ~~~~ -->
-    <style>.captcha-box { display: none;  }</style>
-    <!-- ~~~~ -->
   <title>Contact - the Black Cat</title>
     <!-- ~~~~ -->
 <body class="loading-animation">
@@ -33,7 +31,7 @@
       <div id="turnstile-widget" class="turnstile-widget"></div>
       <br>
     </div>
-    <div class="captcha-box">
+    <div class="captcha-box" style="display: none;">
       <div class="button-outer-box-contact">
         <span>Feel free to contact me via:</span><br>
           <span>● Email at:</span><br>
@@ -63,7 +61,7 @@
           });
         };
         function hideCaptchaAndShowContent() {
-          document.querySelector(".captcha-box").style.display = "visible";
+          document.querySelector(".captcha-box").style.display = "block";
           document.querySelector(".captcha-widget").style.display = "none";
         }
       </script>
