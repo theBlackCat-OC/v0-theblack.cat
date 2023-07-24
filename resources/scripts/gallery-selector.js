@@ -110,4 +110,4 @@ tags.forEach(tag => addTagToContainer(tag));
 addImageToGallery('gallery/chaosringen-fullrender-bust.png', 'Suggestive Bust', 'Full render bust by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
 addImageToGallery('gallery/juurikun-fullbody-sketch.png', 'Safe Fullbody', 'Sketchy fullbody artwork by <a href="https://www.instagram.com/juurikun/" target="_blank">@juurikun</a> ');
 addImageToGallery('gallery/chaosringen-sketch.jpg', 'Safe Suggestive Bust', 'Sketch for the full render bust by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
-addImageToGallery('gallery/ozzays041-sketch.bmp', 'Degen', 'Sketch for the fullrender bust by <a href="patreon.com/Ozzay041" target="_blank">Ozzay</a>');
+addImageToGallery('gallery/ozzays041-sketch.bmp', 'Degen', 'Sketch for the fullrender bust by <a href="https://patreon.com/Ozzay041" target="_blank">Ozzay</a>');
