@@ -77,6 +77,11 @@
     font-size: 1.3em;
     padding-left: 5vh;
 }
+.smollistthree{
+  font-family: 'sanfrancisco', sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+}
 
 .code-container {
     position: relative;

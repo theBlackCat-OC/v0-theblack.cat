@@ -11,6 +11,7 @@
     -webkit-backdrop-filter: blur(3.1px);
     border: 1px solid black;
     padding: 10px;
+    border-radius: 5px;
   }
 
   #gallery-description:hover{
