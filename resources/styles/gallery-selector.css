@@ -88,6 +88,7 @@
 .tag.tag-selected {
     background-color: #4caf50;
     color: #fff;
+    border: 2px solid white;
 }
 
 
