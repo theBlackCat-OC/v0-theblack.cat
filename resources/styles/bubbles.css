@@ -11,6 +11,7 @@
   border: 1px solid black;
   cursor: pointer;
   border-radius: 16px;
+  user-select: none;
 }
 
 .bubble-bug {
@@ -28,6 +29,7 @@
   font-family: 'productsanslight', 'sans-serif';
   border: 1px solid black;
   cursor: default;
+  user-select: none;
 }
 
 .bubble-bug a {
