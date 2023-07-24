@@ -12,25 +12,37 @@
     <!-- ~~~~ -->
     <link rel="stylesheet" type="text/css" href="resources/styles/bubbles-two.css">
     <link rel="stylesheet" type="text/css" href="resources/styles/galleries.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles/gallery-selector.css">
     <!-- ~~~~ -->
   <title>Commissioned Works - "the Black Cat"</title>
 </head>
 <body class="loading-animation">
     <!-- ~~~~ -->
-    <div class="topbar"><a href="https://theblack.cat"><span>&nbsp;"the Black Cat"</span></a>
+    <div class="topbar"><a href="https://theblack.cat"><span>&nbsp;"the Black Cat" - Commissioned Works</span></a>
     </div>
-    <!-- ~~~~ -->  
-      <br><br><br><br>
-      <div id="gallery-description"><img src="resources/thank-you-flaticons/art-gallery.png" width="28" height="28" class="inline-icon-index">&nbsp;<span style="font-family: 'latex-regular';">"the Black Cat"</span> Commissioned Works</div><br><br>
-      <div class="button-outer-box-contact">
-        Galleries Soon&trade;
-      </div>
     <!-- ~~~~ -->
-      <br><br><br><br>
-      <div id="gallery-description"><img src="resources/thank-you-flaticons/skeb-gallery.png" width="28" height="28" class="inline-icon">&nbsp;&nbsp;Galleries Navigation</div><br>
-      <a href="#"><div class="gallery-navigation"><img src="resources/thank-you-flaticons/gallery.png" width="28" height="28" class="inline-icon">&nbsp;Yet Another Gallery</div></a>
-      <br>
-      <br><br>
+    <div class="bubble-trigger-gallery">
+      <img src="resources/thank-you-flaticons/tip.png" width="28" height="28">
+    </div>
+    <div class="bubble-gallery">
+      <span>Gallery Tag browsing tips:
+      <br>●&nbsp;Click on any rating or body size representation tag to browse the gallery.
+      <br>●&nbsp;NSFW are exclusive from each other: you can browse SFW tags with ease.
+      <br>●&nbsp;NSFW tags ("Erotica", "Pornographic" and "Degen") artworks will only include one of those tags and have no body part tag.
+      <br>●&nbsp;No NSFW artwork will have multiple NSFW tags.
+      <br>●&nbsp;The "Degen" tag includes all pornographic works that are not exclusively vanilla.
+      <br>●&nbsp;You may not be OK with this tag assignment.</span>
+    </div>
+  <!-- ~~~~ -->
+    <!-- ~~~~ -->  
+      <br><br><br><br><br><br><br>      
+      <div class="gallery-container">
+        <div class="tag-container-parent">
+          <div class="tag-container" id="tagContainer">
+          </div>
+      </div>
+        <div class="gallery" id="gallery"></div>  
+      <br><br><br></div>
     <!-- ~~~~ -->
       <div class="bubble-trigger-bug">
         <img src="resources/thank-you-flaticons/bug.png" width="28" height="28">
@@ -55,5 +67,7 @@
 <script src="resources/scripts/polkadot.js"></script>
 <script src="resources/scripts/totop.js"></script>
 <script src="resources/scripts/bubble-begone.js"></script>
+<script src="resources/scripts/gallery-selector.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
 </body>
 </html>

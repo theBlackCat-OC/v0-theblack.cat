@@ -43,37 +43,3 @@
 .bubble-bug:hover {
   display: block;
 }
-
-
-@media (max-width: 1244px) {
-  .bubble-trigger-bug {
-    position: absolute;
-    top: 80vh;
-    right: 2vw;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
-    z-index: 3;
-    border-radius: 16px;
-  }
-  
-  .bubble-bug {
-    position: absolute;
-    top: 80.5vh;
-    right: 2.1vw;
-    display: none;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
-    z-index: 4;
-  }
-  
-  .bubble-trigger-bug:hover + .bubble-bug,
-  .bubble-bug:hover {
-    display: block;
-  }
-}

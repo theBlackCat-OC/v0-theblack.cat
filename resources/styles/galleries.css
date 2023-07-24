@@ -1,5 +1,5 @@
-.button-outer-box-contact {
-    width: 62vw;
+.gallery-container {
+    width: 70vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -15,11 +15,11 @@
     border-radius: 13px;
 }
 
-.button-outer-box-contact a {
+.gallery-container a {
   color: rgb(24, 124, 255);
 }
 
-.button-outer-box-contact a:hover, .a:active {
+.gallery-container a:hover, .a:active {
   color: rgb(0, 61, 141);
 }
 
@@ -53,7 +53,7 @@ p{
 
 
 @media (max-width: 1244px) {
-    .button-outer-box-contact {
+    .gallery-container {
         width: 71vw;
         margin: auto;
         overflow: hidden;
