@@ -126,6 +126,6 @@ tags.forEach(tag => addTagToContainer(tag));
 
 addImageToGallery('gallery/chaosringen-fullrender-bust.png', 'Suggestive Bust', 'Full render bust commission by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
 addImageToGallery('gallery/juurikun-fullbody-sketch.png', 'Safe Fullbody', 'Sketchy fullbody artwork commission by <a href="https://www.instagram.com/juurikun/" target="_blank">@juurikun</a><br>🙏 ');
-addImageToGallery('gallery/chaosringen-sketch.jpg', 'Safe Suggestive Bust', 'Sketch for the full render bust commission by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
+addImageToGallery('gallery/chaosringen-sketch.jpg', 'Safe Suggestive Bust', 'Sketch for a full render bust commission by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
 addImageToGallery('gallery/hamo19574270-fullbody.png', 'Degen', 'Skeb commission from <a href="https://skeb.jp/@hamo19574270" target="_blank">鱧</a>');
-addImageToGallery('gallery/ozzays041-sketch.bmp', 'Degen', 'Sketch for the fullbody commission by <a href="https://patreon.com/Ozzay041" target="_blank">Ozzay</a>');
+addImageToGallery('gallery/ozzays041-sketch.bmp', 'Degen', 'Sketch for a fullbody commission by <a href="https://patreon.com/Ozzay041" target="_blank">Ozzay</a>');
