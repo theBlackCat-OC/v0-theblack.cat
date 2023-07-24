@@ -19,12 +19,29 @@ function addTagToContainer(tag) {
   tagElement.style.backgroundColor = tag.backgroundColor;
 
   tagElement.addEventListener('click', function () {
+    const isExclusiveTag = ['Safe', 'Suggestive', 'Erotica', 'Pornographic', 'Degen', 'Fullbody', 'Portrait', 'Bust'].includes(tag.name);
+    
+    // If the clicked tag is an exclusive tag, deselect all other tags in the same category.
+    if (isExclusiveTag) {
+      const exclusiveTags = ['Safe', 'Suggestive', 'Erotica', 'Pornographic', 'Degen', 'Fullbody', 'Portrait', 'Bust'];
+      for (const exclusiveTag of exclusiveTags) {
+        const exclusiveTagElement = document.querySelector('.tag-' + exclusiveTag.toLowerCase());
+        if (exclusiveTag !== tag.name) {
+          exclusiveTagElement.classList.remove('tag-selected');
+        }
+      }
+    }
+
+    // Toggle the clicked tag's selection status.
     tagElement.classList.toggle('tag-selected');
+    
+    // Update the gallery based on the selected tags.
     updateGallery();
   });
 
   tagContainer.appendChild(tagElement);
 }
+
 
 function updateGallery() {
   const selectedTags = Array.from(tagContainer.getElementsByClassName('tag-selected')).map(tag => tag.innerText.toLowerCase());
@@ -89,15 +106,15 @@ function addImageToGallery(mediaSrc, tags, descriptionHTML) {
     gallery.appendChild(imageCard);
   
     addTagsToCard(imageCard, tags);
-  }
-  
-  function createImageElement(imageSrc) {
-    const imgElement = document.createElement('img');
-    imgElement.src = imageSrc;
-    imgElement.alt = 'Image Description';
-    return imgElement;
-  }
-  
+}
+
+function createImageElement(imageSrc) {
+  const imgElement = document.createElement('img');
+  imgElement.src = imageSrc;
+  imgElement.alt = 'Image Description';
+  return imgElement;
+}
+
 function createVideoElement(videoSrc) {
   const videoElement = document.createElement('video');
   videoElement.src = videoSrc;
@@ -107,7 +124,8 @@ function createVideoElement(videoSrc) {
 
 tags.forEach(tag => addTagToContainer(tag));
 
-addImageToGallery('gallery/chaosringen-fullrender-bust.png', 'Suggestive Bust', 'Full render bust by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
-addImageToGallery('gallery/juurikun-fullbody-sketch.png', 'Safe Fullbody', 'Sketchy fullbody artwork by <a href="https://www.instagram.com/juurikun/" target="_blank">@juurikun</a> ');
-addImageToGallery('gallery/chaosringen-sketch.jpg', 'Safe Suggestive Bust', 'Sketch for the full render bust by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
-addImageToGallery('gallery/ozzays041-sketch.bmp', 'Degen', 'Sketch for the fullrender bust by <a href="https://patreon.com/Ozzay041" target="_blank">Ozzay</a>');
+addImageToGallery('gallery/chaosringen-fullrender-bust.png', 'Suggestive Bust', 'Full render bust commission by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
+addImageToGallery('gallery/juurikun-fullbody-sketch.png', 'Safe Fullbody', 'Sketchy fullbody artwork commission by <a href="https://www.instagram.com/juurikun/" target="_blank">@juurikun</a><br>🙏 ');
+addImageToGallery('gallery/chaosringen-sketch.jpg', 'Safe Suggestive Bust', 'Sketch for the full render bust commission by <a href="https://linktr.ee/chaosringen" target="_blank">@chaosringen</a>');
+addImageToGallery('gallery/hamo19574270-fullbody.png', 'Degen', 'Skeb commission from <a href="https://skeb.jp/@hamo19574270" target="_blank">鱧</a>');
+addImageToGallery('gallery/ozzays041-sketch.bmp', 'Degen', 'Sketch for the fullbody commission by <a href="https://patreon.com/Ozzay041" target="_blank">Ozzay</a>');

@@ -138,3 +138,8 @@ body{
   #turnstile-widget{
     text-align: center;
   }
+
+  #goTopBtn{
+    text-align: center;
+    cursor: pointer;
+  }
