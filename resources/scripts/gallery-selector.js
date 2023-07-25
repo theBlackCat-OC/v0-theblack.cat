@@ -8,8 +8,8 @@ const tags = [
   { name: 'Pornographic', backgroundColor: '#f72a2a' },
   { name: 'Degen', backgroundColor: '#b62af7' },
   { name: 'Fullbody', backgroundColor: '#f57dad' },
-  { name: 'Portrait', backgroundColor: '#2a83f7' },
   { name: 'Bust', backgroundColor: '#2af791' },
+  { name: 'Portrait', backgroundColor: '#2a83f7' },
 ];
 
 function addTagToContainer(tag) {
