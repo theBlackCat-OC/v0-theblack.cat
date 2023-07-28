@@ -20,7 +20,7 @@
 
 @media (max-width: 1920px) {
   .topbar{
-    text-align: center;
+    text-align: left;
     font-family: 'latex-regular', sans-serif;
     font-size: 3em;
     color: black;
