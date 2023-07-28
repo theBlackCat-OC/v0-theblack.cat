@@ -14,10 +14,31 @@
     border-radius: 13px;
   }
 
-  .button-outer-box-contact span{
+  .contact-data a {
+    color: rgb(24, 124, 255);
+  }
+  
+  .contact-data a:hover, .a:active {
+    color: rgb(0, 61, 141);
+  }
+
+  .contact-data span{
     font-size: 0.9em;
   }
 
+  summary{
+    cursor: pointer;
+    font-family: 'latex-regular';
+  }
+
+  p {
+    text-align: left;
+    font-family: 'productsanslight';
+  }
+
+  details[open] .misskey-text-tutorial {
+    display: none;
+}
   .twitter-timeline{
     text-align: center;
     width: 75vh;
@@ -36,6 +57,12 @@
   #myImage:hover{
     transform: scale(1.2);
     transition: 0.5s;
+  }
+
+  .misskey-tutorial{
+    width: 20vw;
+    display: inline;
+    text-align: center;
   }
 
   .contact-data {
@@ -70,6 +97,26 @@
       font-size: 1.2em;
       line-height: 1.6;
       font-family: 'sanfrancisco', sans-serif;
+    }
+
+    .contact-data {
+      width: 75vw;
+      margin: auto;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+      border: 1px solid black;
+      padding: 15px;
+      box-sizing: border-box;
+      line-height: 1.6;
+      font-family: 'sanfrancisco', sans-serif;
+      border-radius: 13px;
+    }
+
+    .misskey-tutorial{
+      width: 31vw;
     }
     
     .button-outer-box-contact span {
