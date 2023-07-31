@@ -1,35 +1,35 @@
 @font-face {    
   font-family: 'sanfrancisco';    
-  src: url('https://cdn.theblack.cat/resources/fonts/sanfrancisco.otf')  
+  src: url('https://cdn.theblack.cat/resources/fonts/sanfrancisco.otf');  
 }
 @font-face {    
   font-family: 'productsanslight';    
-  src: url('https://cdn.theblack.cat/resources/fonts/productsanslight.ttf')  
+  src: url('https://cdn.theblack.cat/resources/fonts/productsanslight.ttf');  
 }
 @font-face {    
   font-family: 'chirp';    
-  src: url('https://cdn.theblack.cat/resources/fonts/chirp.woff')  
+  src: url('https://cdn.theblack.cat/resources/fonts/chirp.woff');  
 }
 @font-face {    
   font-family: 'latex-italic-bold';    
-  src: url('https://cdn.theblack.cat/resources/fonts/latex-italic-bold.ttf') 
+  src: url('https://cdn.theblack.cat/resources/fonts/latex-italic-bold.ttf'); 
 }
 @font-face {    
   font-family: 'latex-italic-slim';    
-  src: url('https://cdn.theblack.cat/resources/fonts/latex-italic-slim.ttf') 
+  src: url('https://cdn.theblack.cat/resources/fonts/latex-italic-slim.ttf'); 
 }
 @font-face {    
   font-family: 'latex-italic';    
-  src: url('https://cdn.theblack.cat/resources/fonts/latex-italic.ttf')  
+  src: url('https://cdn.theblack.cat/resources/fonts/latex-italic.ttf');  
 }
 @font-face {    
   font-family: 'latex-regular';    
-  src: url('https://cdn.theblack.cat/resources/fonts/latex-regular.ttf')  
+  src: url('https://cdn.theblack.cat/resources/fonts/latex-regular.ttf');  
 }
 
 @font-face {    
   font-family: 'cascadia';    
-  src: url('https://cdn.theblack.cat/resources/fonts/cascadia.otf')  
+  src: url('https://cdn.theblack.cat/resources/fonts/cascadia.otf');  
 }
 
 body{
