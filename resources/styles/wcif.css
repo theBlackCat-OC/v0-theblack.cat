@@ -91,6 +91,17 @@
     position: absolute;
     top: 5px;
     right: 5px;
+    cursor: pointer;
+    z-index: 33;
+    transition: transform 0.5s;
+  }
+
+  .copy-button:hover {
+    transform: scale(1.2);
+  }
+  
+  .copy-button:not(:hover) {
+    transform: scale(1);
   }
   
   .code-container{
@@ -109,7 +120,7 @@
     border-radius: 16px;
   }
   .code-container-big{
-    width: 70vh;
+    width: 85vh;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
