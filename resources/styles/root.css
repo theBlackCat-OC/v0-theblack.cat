@@ -1,11 +1,11 @@
-@font-face {    font-family: 'sanfrancisco';          src: url('/resources/fonts/sanfrancisco.otf') format('opentype');  }
-@font-face {    font-family: 'productsanslight';      src: url('/resources/fonts/productsanslight.ttf') format('truetype');  }
-@font-face {    font-family: 'chirp';                 src: url('/resources/fonts/chirp.woff') format('woff');  }
-@font-face {    font-family: 'latex-italic-bold';     src: url('/resources/fonts/latex-italic-bold.ttf') format('truetype');  }
-@font-face {    font-family: 'latex-italic-slim';     src: url('/resources/fonts/latex-italic-slim.ttf') format('truetype');  }
-@font-face {    font-family: 'latex-italic';          src: url('/resources/fonts/latex-italic.ttf') format('truetype');  }
-@font-face {    font-family: 'latex-regular';         src: url('/resources/fonts/latex-regular.ttf') format('truetype');  }
-@font-face {    font-family: 'cascadia';              src: url('/resources/fonts/cascadia.otf') format('opentype');  }
+@font-face {    font-family: 'sanfrancisco';    src: url('https://cdn.theblack.cat/resources/fonts/sanfrancisco.otf') format('opentype');  }
+@font-face {    font-family: 'productsanslight';    src: url('https://cdn.theblack.cat/resources/fonts/productsanslight.ttf') format('opentype');  }
+@font-face {    font-family: 'chirp';    src: url('https://cdn.theblack.cat/resources/fonts/chirp.woff') format('woff');  }
+@font-face {    font-family: 'latex-italic-bold';    src: url('https://cdn.theblack.cat/resources/fonts/latex-italic-bold.ttf') format('opentype');  }
+@font-face {    font-family: 'latex-italic-slim';    src: url('https://cdn.theblack.cat/resources/fonts/latex-italic-slim.ttf') format('opentype');  }
+@font-face {    font-family: 'latex-italic';    src: url('https://cdn.theblack.cat/resources/fonts/latex-italic.ttf') format('opentype');  }
+@font-face {    font-family: 'latex-regular';    src: url('https://cdn.theblack.cat/resources/fonts/latex-regular.ttf') format('opentype');  }
+@font-face {    font-family: 'cascadia';    src: url('https://cdn.theblack.cat/resources/fonts/cascadia.otf') format('opentype');  }
 
 body{
     background-image: radial-gradient(white 6%, transparent 10%),
