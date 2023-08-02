@@ -1,11 +1,49 @@
-@font-face {    font-family: 'sanfrancisco';    src: url('/resources/fonts/sanfrancisco.otf') format('opentype');  }
-@font-face {    font-family: 'productsanslight';    src: url('/resources/fonts/productsanslight.ttf') format('opentype');  }
-@font-face {    font-family: 'chirp';    src: url('/resources/fonts/chirp.woff') format('woff');  }
-@font-face {    font-family: 'latex-italic-bold';    src: url('/resources/fonts/latex-italic-bold.ttf') format('opentype');  }
-@font-face {    font-family: 'latex-italic-slim';    src: url('/resources/fonts/latex-italic-slim.ttf') format('opentype');  }
-@font-face {    font-family: 'latex-italic';    src: url('/resources/fonts/latex-italic.ttf') format('opentype');  }
-@font-face {    font-family: 'latex-regular';    src: url('/resources/fonts/latex-regular.ttf') format('opentype');  }
-@font-face {    font-family: 'cascadia';    src: url('/resources/fonts/cascadia.otf') format('opentype');  }
+@font-face {
+  font-family: 'sanfrancisco';
+  src: url('/resources/fonts/sanfrancisco.otf') format('opentype'),
+  url('https://cdn.theblack.cat/resources/fonts/sanfrancisco.otf') format('opentype');
+}
+@font-face {
+  font-family: 'productsanslight';
+  src: url('/resources/fonts/productsanslight.ttf') format('truetype'),
+  url('https://cdn.theblack.cat/resources/fonts/productsanslight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'chirp';
+  src: url('/resources/fonts/chirp.woff') format('woff'),
+  url('https://cdn.theblack.cat/resources/fonts/chirp.woff') format('woff');
+}
+@font-face {
+  font-family: 'latex-italic-bold';
+  src: url('/resources/fonts/latex-italic-bold.ttf') format('truetype'),
+  url('https://cdn.theblack.cat/resources/fonts/latex-italic-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'latex-italic-slim';
+  src: url('/resources/fonts/latex-italic-slim.ttf') format('truetype'),
+  url('https://cdn.theblack.cat/resources/fonts/latex-italic-slim.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'latex-italic';
+  src: url('/resources/fonts/latex-italic.ttf') format('truetype'),
+  url('https://cdn.theblack.cat/resources/fonts/latex-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'latex-regular';
+  src: url('/resources/fonts/latex-regular.ttf') format('truetype'),
+  url('https://cdn.theblack.cat/resources/fonts/latex-regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'cascadia';
+  src: url('/resources/fonts/cascadia.otf') format('opentype'),
+  url('https://cdn.theblack.cat/resources/fonts/cascadia.otf') format('opentype');
+}
+@font-face {
+  font-family: 'FFXIV';
+  src: url('/resources/fonts/FFXIV_Lodestone_SSF.ttf') format('truetype'),
+       url('/resources/fonts/FFXIV_Lodestone_SSF.woff') format('woff');
+  unicode-range: U+E020-E0DB;
+}
 
 body{
     background-image: radial-gradient(white 6%, transparent 10%),
@@ -143,4 +181,21 @@ body{
   #goTopBtn{
     text-align: center;
     cursor: pointer;
+  }
+
+  .notfound{
+    border-radius: 16px;
+    width: 43vw;
+    font-family: 'sanfrancisco', sans-serif;
+    font-size: 0.8em;
+    margin: auto;
+    text-align: center;
+    color: black;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px;
   }
