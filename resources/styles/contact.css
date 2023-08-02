@@ -34,6 +34,7 @@
   p {
     text-align: left;
     font-family: 'productsanslight';
+    margin: 5px;
   }
 
   details[open] .misskey-text-tutorial {
@@ -41,7 +42,7 @@
 }
   .twitter-timeline{
     text-align: center;
-    width: 75vh;
+    width: 75vw;
     margin: auto;
     font-family: 'chirp', sans-serif;
   }
