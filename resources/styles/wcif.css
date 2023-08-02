@@ -1,5 +1,5 @@
 .button-outer-box-contact {
-  width: 62vw;
+  width: 40vw;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -105,7 +105,7 @@
   }
   
   .code-container{
-    width: 60vh;
+    width: 32vh;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
@@ -120,7 +120,7 @@
     border-radius: 16px;
   }
   .code-container-big{
-    width: 85vh;
+    width: 32vh;
     margin: auto;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.25);
