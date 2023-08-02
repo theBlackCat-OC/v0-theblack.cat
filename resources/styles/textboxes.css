@@ -1,5 +1,5 @@
 #gallery-description{
-    width: 47vw;
+    max-width: 47vw;
     text-align: center;
     margin: auto;
     font-family: 'productsanslight', sans-serif;
@@ -20,7 +20,7 @@
   
   .gallery-navigation{
     border-radius: 13px;
-    width: 43vw;
+    max-width: 43vw;
     font-family: 'sanfrancisco', sans-serif;
     font-size: 1.6em;
     margin: auto;
@@ -53,7 +53,6 @@
 
   @media (max-width: 1244px) {
     #gallery-description{
-      width: 75vw;
       text-align: center;
       margin: auto;
       font-family: 'productsanslight', sans-serif;
@@ -73,7 +72,6 @@
     }
     
     .gallery-navigation{
-      width: 73vw;
       font-family: 'sanfrancisco', sans-serif;
       font-size: 1.3em;
       margin: auto;

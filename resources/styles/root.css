@@ -82,6 +82,21 @@ body{
      }
   }
 
+  .big-box-container {
+    width: 52vw;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+      border: 1px solid black;
+      padding: 15px;
+      box-sizing: border-box;
+      text-align: left;
+      line-height: 1.6;
+      border-radius: 13px;
+  }
+
   .footnote{
     font-size:0.8em;
   }
@@ -128,6 +143,10 @@ body{
       animation-timing-function: linear;
       opacity: 1;
       transition: opacity 0.5s ease-in-out;
+    }
+
+    .big-box-container {
+      width: 70vw;
     }
     
     body.fade-out {
